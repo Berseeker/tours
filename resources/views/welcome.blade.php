@@ -136,7 +136,7 @@
         <!-- Hero video -->
         <div class="hero-video">
             <div class="video bg-video-wrapper ratio ratio-16x9">
-                <video poster="{{ asset('img/hero/h1.jpg') }}" src="{{ asset('img/videos/v1.mp4') }}" autoplay loop playsinline muted></video>
+                <video poster="{{ asset('img/hero/h1.jpg') }}" src="{{ asset('img/videos/yucatan.mp4') }}" autoplay loop playsinline muted></video>
             </div>
             <!-- Caption -->
             <div class="hero-caption">
@@ -329,8 +329,8 @@
     <div class="container">
         <!-- Heading -->
         <div class="heading d-none">
-            <h2 class="title">Top travel styles</h2>
-            <p>Explore tours in different styles</p>
+            <h2 class="title">{{ __('home.category.title') }}</h2>
+            <p>{{ __('home.category.text') }}</p>
         </div>
         <!-- /Heading -->
         <!-- Category list -->
@@ -340,7 +340,7 @@
                 <a href="tour-grid.html" class="image-box d-block rounded-3 text-center">
                     <figure>
                         <img loading="lazy" src="{{ asset('img/tours/t1.jpg') }}" class="img-fluid" alt="">
-                        <figcaption>Ecotourism & Resort</figcaption>
+                        <figcaption>{{ __('home.category.list') }}</figcaption>
                     </figure>
                 </a>
                 <!-- /Category item -->
@@ -350,7 +350,7 @@
                 <a href="tour-grid.html" class="image-box d-block rounded-3 text-center">
                     <figure>
                         <img loading="lazy" src="{{ asset('img/tours/t2.jpg') }}" class="img-fluid" alt="">
-                        <figcaption>Cultural & Foods</figcaption>
+                        <figcaption>{{ __('home.category.list2') }}</figcaption>
                     </figure>
                 </a>
                 <!-- /Category item -->
@@ -360,7 +360,7 @@
                 <a href="tour-grid.html" class="image-box d-block rounded-3 text-center">
                     <figure>
                         <img loading="lazy" src="{{ asset('img/tours/t3.jpg') }}" class="img-fluid" alt="">
-                        <figcaption>Explorer & Adventure</figcaption>
+                        <figcaption>{{ __('home.category.list3') }}</figcaption>
                     </figure>
                 </a>
                 <!-- /Category item -->
@@ -370,7 +370,7 @@
                 <a href="tour-grid.html" class="image-box d-block rounded-3 text-center">
                     <figure>
                         <img loading="lazy" src="{{ asset('img/tours/t4.jpg') }}" class="img-fluid" alt="">
-                        <figcaption>Festival & Events</figcaption>
+                        <figcaption>{{ __('home.category.list4') }}</figcaption>
                     </figure>
                 </a>
                 <!-- /Category item -->
@@ -380,7 +380,7 @@
                 <a href="tour-grid.html" class="image-box d-block rounded-3 text-center">
                     <figure>
                         <img loading="lazy" src="{{ asset('img/tours/t5.jpg') }}" class="img-fluid" alt="">
-                        <figcaption>Museums & Exhibitions</figcaption>
+                        <figcaption>{{ __('home.category.list5') }}</figcaption>
                     </figure>
                 </a>
                 <!-- /Category item -->
@@ -391,7 +391,7 @@
                     <figure>
                         <img loading="lazy" src="{{ asset('img/tours/t6.jpg') }}" class="img-fluid" alt="">
                         <figcaption>
-                            <span> See all</span>
+                            <span>{{ __('home.see.all') }}</span>
                             <i class="ti ti-plus"></i>
                         </figcaption>
                     </figure>
@@ -406,7 +406,7 @@
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="mdlTitle">All Tour Categories</h4>
+                    <h4 class="modal-title" id="mdlTitle">{{ __('home.all.categories') }}</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -417,7 +417,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t1.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Ecotourism & Resort
+                                {{ __('home.category.list') }}
                             </span>
                         </a>
                         <a href="tour-grid.html" class="d-flex align-items-center modal-category-item">
@@ -425,7 +425,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t2.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Cultural & Foods
+                                {{ __('home.category.list2') }}
                             </span>
                         </a>
                         <a href="tour-grid.html" class="d-flex align-items-center modal-category-item">
@@ -433,7 +433,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t3.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Explorer & Adventure
+                                {{ __('home.category.list3') }}
                             </span>
                         </a>
                         <a href="tour-grid.html" class="d-flex align-items-center modal-category-item">
@@ -441,7 +441,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t4.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Festival & Events
+                                {{ __('home.category.list4') }}
                             </span>
                         </a>
                         <a href="tour-grid.html" class="d-flex align-items-center modal-category-item">
@@ -449,7 +449,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t5.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Museums & Exhibitions
+                                {{ __('home.category.list5') }}
                             </span>
                         </a>
                         <a href="tour-grid.html" class="d-flex align-items-center modal-category-item">
@@ -457,7 +457,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t6.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Hiking & Trekking
+                                {{ __('home.category.list6') }}
                             </span>
                         </a>
                         <a href="tour-grid.html" class="d-flex align-items-center modal-category-item">
@@ -465,7 +465,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t7.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Motor & Bicycles
+                                {{ __('home.category.list7') }}
                             </span>
                         </a>
                         <a href="tour-grid.html" class="d-flex align-items-center modal-category-item">
@@ -473,7 +473,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t8.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Ships & boats
+                                {{ __('home.category.list8') }}
                             </span>
                         </a>
                         <a href="tour-grid.html" class="d-flex align-items-center modal-category-item">
@@ -481,7 +481,7 @@
                                 <img loading="lazy" src="{{ asset('img/tours/t9.jpg') }}" alt="...">
                             </figure>
                             <span class="flex-grow-1 ms-3">
-                                Family Activities
+                                {{ __('home.category.list9') }}
                             </span>
                         </a>
                     </div>
@@ -508,8 +508,8 @@
                         <div class="card-body">
                             <!-- Heading -->
                             <div class="heading">
-                                <h2 class="title">Why choose us?</h2>
-                                <p>World leading tour operator and organization</p>
+                                <h2 class="title">{{ __('home.why.title') }}</h2>
+                                <p>{{ __('home.why.text') }}</p>
                             </div>
                             <!-- /Heading -->
                             <!-- Why list -->
@@ -519,8 +519,8 @@
                                         <img loading="lazy" src="{{ asset('img/icons/s1.svg') }}" alt="">
                                     </div>
                                     <div class="content">
-                                        <h4>Book with flexibility</h4>
-                                        <p>Book your trip easily and quickly, get free cancellation. Explore the magnificent and romantic Europe in your way.</p>
+                                        <h4>{{ __('home.book.title') }}</h4>
+                                        <p>{{ __('home.book.text') }}</p>
                                     </div>
                                 </li>
                                 <li class="why-item">
@@ -528,8 +528,8 @@
                                         <img loading="lazy" src="{{ asset('img/icons/s2.svg') }}" alt="">
                                     </div>
                                     <div class="content">
-                                        <h4>Best price guarantee</h4>
-                                        <p>We are committed to the best prices and many promotions to bring you unforgettable European adventures.</p>
+                                        <h4>{{ __('home.price.title') }}</h4>
+                                        <p>{{ __('home.price.text') }}</p>
                                     </div>
                                 </li>
                                 <li class="why-item">
@@ -537,8 +537,8 @@
                                         <img loading="lazy" src="{{ asset('img/icons/s3.svg') }}" alt="">
                                     </div>
                                     <div class="content">
-                                        <h4>Free support 24/7</h4>
-                                        <p>We stand by you on every trip and are ready to assist you promptly whenever you need us. We are online 24/7.</p>
+                                        <h4>{{ __('home.support.title') }}</h4>
+                                        <p>{{ __('home.support.text') }}</p>
                                     </div>
                                 </li>
                             </ul>
@@ -553,14 +553,14 @@
 <!-- /WHY -->
 <!-- ADVENTRURE -->
 <section id="sight" class="section-mb-80">
-    <div class="bg-image-wrapper bg-image bg-image-overlay bg-image-overlay-900 section-pt-100 section-pb-100 light-content" data-image-src="{{ asset('img/about/a5.jpg') }}">
+    <div class="bg-image-wrapper bg-image bg-image-overlay bg-image-overlay-900 section-pt-100 section-pb-100 light-content" data-image-src="{{ asset('img/about/yucatan.webp') }}">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-xl-3">
                     <!-- Heading -->
                     <div class="heading">
-                        <h2 class="title">Exploring Europe your way</h2>
-                        <p>Explore Europe's ancient civilization with its lavish and magnificent cities and romantic love scenes.</p>
+                        <h2 class="title">{{ __('home.explore.title') }}</h2>
+                        <p>{{ __('home.explore.text') }}</p>
                     </div>
                     <!-- /Heading -->
                 </div>
@@ -578,11 +578,11 @@
                                     </figure>
                                     <div class="card-body p-3 p-sm-4">
                                         <h3 class="card-title">
-                                            <a href="tour-grid.html">Group Adventures</a>
+                                            <a href="tour-grid.html">{{ __('home.explore.grid.title') }}</a>
                                         </h3>
-                                        <p>Join a friendly travel group for unforgettable trips.</p>
+                                        <p>{{ __('home.explore.grid.text') }}</p>
                                         <a href="tour-grid.html" class="detail-link">
-                                            <span>Explorer</span>
+                                            <span>{{ __('home.explore') }}</span>
                                             <i class="ti ti-arrow-narrow-right"></i>
                                         </a>
                                     </div>
@@ -598,10 +598,10 @@
                                         </a>
                                     </figure>
                                     <div class="card-body p-3 p-sm-4">
-                                        <h3 class="card-title"><a href="tour-grid.html">Private Adventures</a> </h3>
-                                        <p>Travel exclusively with your friends, family and loved ones.</p>
+                                        <h3 class="card-title"><a href="tour-grid.html">{{ __('home.explore.grid.title2') }}</a> </h3>
+                                        <p>{{ __('home.explore.grid.text2') }}</p>
                                         <a href="tour-grid.html" class="detail-link">
-                                            <span>Explorer</span>
+                                            <span>{{ __('home.explore') }}</span>
                                             <i class="ti ti-arrow-narrow-right"></i>
                                         </a>
                                     </div>
@@ -617,10 +617,10 @@
                                         </a>
                                     </figure>
                                     <div class="card-body p-3 p-sm-4">
-                                        <h3 class="card-title"><a href="tour-grid.html">Tailor-Made Adventures</a></h3>
-                                        <p>Customize an existing itinerary or create your own.</p>
+                                        <h3 class="card-title"><a href="tour-grid.html">{{ __('home.explore.grid.title3') }}</a></h3>
+                                        <p>{{ __('home.explore.grid.text3') }}</p>
                                         <a href="tour-grid.html" class="detail-link">
-                                            <span>Explorer</span>
+                                            <span>{{ __('home.explore') }}</span>
                                             <i class="ti ti-arrow-narrow-right"></i>
                                         </a>
                                     </div>
@@ -642,78 +642,78 @@
         <!-- Heading -->
         <div class="d-md-flex align-items-md-center justify-content-md-between">
             <div class="heading mb-2">
-                <h2 class="title">Top Europe countries</h2>
-                <p>The attractive tourist countries in Europe</p>
+                <h2 class="title">{{ __('home.top.title') }}</h2>
+                <p>{{ __('home.top.text') }}</p>
             </div>
-            <a href="destination.html" class="d-inline-block mb-4 pb-2">
+            <!--a href="destination.html" class="d-inline-block mb-4 pb-2">
                 <span>All countries</span>
                 <i class="ti ti-arrow-narrow-right"></i>
-            </a>
+            </a-->
         </div>
         <!-- /Heading -->
         <!-- City list -->
         <div class="row g-2 g-lg-3">
             <div class="col-12 col-xl-4 col-lg-6 col-md-6">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d13.jpg') }}"></span>
-                    <h3 class="name h5">Italy</h3>
-                    <p class="tour">451 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/cocobongo.jpeg') }}"></span>
+                    <h3 class="name h5">Cancun</h3>
+                    <p class="tour">Cocobongo</p>
                 </a>
             </div>
             <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d65.jpg') }}"></span>
-                    <h3 class="name h5">Spain </h3>
-                    <p class="tour">61 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/izamal.jpeg') }}"></span>
+                    <h3 class="name h5">Merida </h3>
+                    <p class="tour">Izamal</p>
                 </a>
             </div>
             <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d67.jpg') }}"></span>
-                    <h3 class="name h5">Greece </h3>
-                    <p class="tour">231 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/coloradas.jpeg') }}"></span>
+                    <h3 class="name h5">Yucatan </h3>
+                    <p class="tour">Las Coloradas</p>
                 </a>
             </div>
             <div class="col-12 col-xl-4 col-lg-6 col-md-6">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d66.jpg') }}"></span>
-                    <h3 class="name h5">France </h3>
-                    <p class="tour">61 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/cenote.webp') }}"></span>
+                    <h3 class="name h5">Valladolid </h3>
+                    <p class="tour">Cenote</p>
                 </a>
             </div>
             <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d16.jpg') }}"></span>
-                    <h3 class="name h5">United Kingdom </h3>
-                    <p class="tour">213 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/pyramid.webp') }}"></span>
+                    <h3 class="name h5">Yucatan </h3>
+                    <p class="tour">Chichen Itza</p>
                 </a>
             </div>
             <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d67.jpg') }}"></span>
-                    <h3 class="name h5">Greece </h3>
-                    <p class="tour">231 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/progreso.jpeg') }}"></span>
+                    <h3 class="name h5">Yucatan </h3>
+                    <p class="tour">Progreso</p>
                 </a>
             </div>
             <div class="col-12 col-xl-4 col-lg-6 col-md-6">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d68.jpg') }}"></span>
-                    <h3 class="name h5">Switzerland </h3>
-                    <p class="tour">212 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/mujeres.webp') }}"></span>
+                    <h3 class="name h5">Yucatan </h3>
+                    <p class="tour">Isla Mujeres</p>
                 </a>
             </div>
             <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d69.jpg') }}"></span>
-                    <h3 class="name h5">Germany </h3>
-                    <p class="tour">542 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/holbox.jpeg') }}"></span>
+                    <h3 class="name h5">Yucatan </h3>
+                    <p class="tour">Holbox</p>
                 </a>
             </div>
             <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <a href="country.html" class="overlay-image-box rounded-3 text-center">
-                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/d70.jpg') }}"></span>
-                    <h3 class="name h5">Netherlands </h3>
-                    <p class="tour">321 Tours</p>
+                    <span class="image bg-image bg-image-wrapper bg-image-cover" data-image-src="{{ asset('img/destinations/xcaret.jpeg') }}"></span>
+                    <h3 class="name h5">Cancun </h3>
+                    <p class="tour">Xcaret</p>
                 </a>
             </div>
         </div>
@@ -722,14 +722,12 @@
 </section>
 <!-- /COUNTRIES -->
 <!-- CITIES -->
-<section id="cities" class="section-mb-80">
+<!--section id="cities" class="section-mb-80">
     <div class="container">
-        <!-- Heading -->
         <div class="heading">
             <h2 class="title">Attractive European cities</h2>
             <p>Europe tours are chosen by many tourists</p>
         </div>
-        <!-- /Heading -->
         <div class="popular-city">
             <ul class="list-unstyled fs-6 fw-bold-1 mb-0">
                 <li class="list-inline-item me-1 mb-2">
@@ -891,23 +889,23 @@
             </ul>
         </div>
     </div>
-</section>
+</section-->
 <!-- /CITIES -->
 <!-- VIDEO -->
 <section id="video" class="section-mb-80">
-    <div class="bg-image-wrapper bg-image bg-image-overlay bg-image-overlay-800 light-content section-pt-120 section-pb-200" data-image-src="{{ asset('img/about/a4.jpg') }}">
+    <div class="bg-image-wrapper bg-image bg-image-overlay bg-image-overlay-800 light-content section-pt-120 section-pb-200" data-image-src="{{ asset('img/about/cancun.webp') }}">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-xl-6 col-lg-8 col-md-10">
                     <div class="video-box-content text-center">
                         <!-- Heading -->
                         <div class="heading">
-                            <h2 class="title">Elegance and Magnificent Europe</h2>
-                            <p>Explore Europe and experience the quintessence of magnificence through its castles, ancient civilizations, and romantic love cities.</p>
+                            <h2 class="title">{{ __('home.vid.title') }}</h2>
+                            <p>{{ __('home.vid.text') }}</p>
                         </div>
                         <!-- /Heading -->
                         <!-- Video button -->
-                        <a class="video-play-button media-glightbox" href="{{ asset('img/videos/v1.mp4') }}"><span></span></a>
+                        <a class="video-play-button media-glightbox" href="{{ asset('img/videos/yucatan.mp4') }}"><span></span></a>
                         <!-- /Video button -->
                     </div>
                 </div>

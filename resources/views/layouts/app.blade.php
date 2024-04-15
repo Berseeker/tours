@@ -21,7 +21,7 @@
     <link type="text/css" href="{{ asset('plugins/flatpickr/monthSelect.min.css') }}" rel="stylesheet">
     <link type="text/css" href="{{ asset('plugins/dselect/dselect.min.css') }}" rel="stylesheet">
     <link type="text/css" href="{{ asset('plugins/tabler-icons/tabler-icons.min.css') }}" rel="stylesheet">
-    <link type="text/css" href="{{ asset('css/marshal.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('css/home_.css') }}" rel="stylesheet">
     <!-- Scripts -->
 </head>
 <body>
