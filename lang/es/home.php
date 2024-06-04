@@ -49,5 +49,17 @@ return [
     'top.text' => 'Las atractivas aventuras en la Peninsula de Yucatán',
     'vid.title' => 'Elegancia y magnifica Yucatan',
     'vid.text' => 'Explora Yucatán y experimenta la quintaesencia de la magnificencia a través de sus pirámides, civilizaciones antiguas.',
+    'top.tour.title' => "Top Tours",
+    'top.tour.p' => 'Muchos turistas eligen recorridos atractivos',
+    'top.tour.from' => 'Desde:',
+    'testimonial.title' => '¿Que se dice de nosotros?',
+    'testimonial.p' => 'Brindamos a nuestros clientes experiencias emocionantes después de cada viaje y preservamos grandes momentos.',
+    'testimonial.button' => 'Leer más',
+    'information.title' => 'Información util',
+    'information.p' => 'Cosas que debes saber al viajar a Yucatan',
+    'newsletter.title' => 'Suscríbete a nuestro boletín',
+    'newsletter.p' => 'Regístrese ahora para recibir consejos de viaje, itinerarios personalizados e inspiración para las vacaciones directamente en su bandeja de entrada.',
+    'newsletter.sign' => 'Inscribirse',
+    'newsletter.note' => 'Al registrarse, acepta recibir correos electrónicos promocionales y consejos de expertos. Podrás dar de baja tu consentimiento en cualquier momento con efectos futuros.'
 
 ];

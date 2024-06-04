@@ -123,4 +123,7 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'currency' => env('APP_CURRENCY'),
+    'bearer_token' => env('BEARER_TOKEN')
+
 ];

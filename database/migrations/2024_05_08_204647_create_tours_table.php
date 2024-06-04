@@ -18,8 +18,10 @@ return new class extends Migration
             $table->string('days_range_en');
             $table->string('name_es');
             $table->string('name_en');
-            $table->double('price'); // USD
-            $table->json('tag_es'); //E.g promotion, popular
+            $table->double('price');
+            $table->boolean('price_included_taxes')->default(false);
+            $table->enum('currency',['USD', 'MXN', 'EUR'])->default('USD'); // USD BY DEFAULT
+            $table->json('tag_es'); //E.g promotion, popular, bestseller
             $table->json('tag_en');
             $table->integer('discount')->default(0); //porcentaje
             $table->boolean('free_cancelation')->default(false); //porcentaje
@@ -36,7 +38,9 @@ return new class extends Migration
             $table->json('itinerary_en'); //E.g. se hare una separacion con explode() del la etiqueta <br> para el titulo y la descripcion 
             $table->json('images');
             $table->longText('main_image');
+            $table->enum('rate',['rate-10', 'rate-15', 'rate-20', 'rate-25', 'rate-30', 'rate-35', 'rate-40', 'rate-45', 'rate-50']);
             $table->json('includes'); //E.g. es un array de ids de la tabla tours_includes [1,2,3]
+            $table->integer('reviews')->default(0); //E.g. es un contador de las personas que compran o comentan los tours
             //FK location E.g. [yucatan,cancun,merida]
             $table->timestamps();
         });

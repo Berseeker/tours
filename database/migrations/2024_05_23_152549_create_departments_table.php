@@ -11,13 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('countries', function (Blueprint $table) {
+        Schema::create('departments', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('lang')->default('es_MX');
-            $table->string('currency')->default('MXN');
-            $table->double('exchange_rate'); //E.g. La conversion se hara siempre al tipo de cambio del dolar
-            $table->longText('flag')->nullable();
+            $table->string('name'); //E.g. ['ventas','marketing']
+            $table->string('slug');
             $table->timestamps();
         });
     }
@@ -27,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('countries');
+        Schema::dropIfExists('departments');
     }
 };

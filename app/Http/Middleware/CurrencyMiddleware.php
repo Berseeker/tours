@@ -4,11 +4,11 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Config;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Config;
+use App\Models\Country;
 
-class LocaleMiddleware
+class CurrencyMiddleware
 {
     /**
      * Handle an incoming request.
@@ -17,14 +17,12 @@ class LocaleMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (isset($request->locale)) {
-            App::setLocale($request->locale);
-        } else {
-            dd(Config::get('app.currency'));
-            App::setLocale('es');
+        //We need to ensure the currency send its on the database
+        if ($request->currency != null && in_array($request->currency, ['es_MXN', 'en_US', 'en_EU'])) {
+            $country = Country::where('lang', $request->currency)->first();
+            Config::set('app.currency', $country->lang);
         }
-        
- 
+
         return $next($request);
     }
 }

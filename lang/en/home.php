@@ -49,5 +49,18 @@ return [
     'top.text' => 'The attractive adventures in the Yucatan Peninsula',
     'vid.title' => 'Elegance and Magnificent Yucatan',
     'vid.text' => 'Explore Yucatan and experience the quintessence of magnificence through its pyramids, ancient civilizations.',
+    'top.tour.title' => "Top Tours",
+    'top.tour.p' => 'Attractive tours are chosen by many tourists',
+    'top.tour.from' => 'From:',
+    'testimonial.title' => 'What to say about us?',
+    'testimonial.p' => 'We give our customers exciting experiences after every trip and preserve great moments.',
+    'testimonial.button' => 'Read more',
+    'information.title' => 'Useful information',
+    'information.p' => 'Things to know when traveling to Europe',
+    'newsletter.title' => 'Sign up for our newsletter',
+    'newsletter.p' => 'Sign up now for travel tips, personalized itineraries, and vacation inspiration straight to your inbox.',
+    'newsletter.sign' => 'Sign up',
+    'newsletter.note' => 'By signing up, you agree to receive promotional emails and insider tips. You can unsubscribe your consent at any time with future effect.'
+
 
 ];

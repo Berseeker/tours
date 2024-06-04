@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('countries', function (Blueprint $table) {
+        Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('lang')->default('es_MX');
-            $table->string('currency')->default('MXN');
-            $table->double('exchange_rate'); //E.g. La conversion se hara siempre al tipo de cambio del dolar
-            $table->longText('flag')->nullable();
+            $table->string('location');
+            $table->enum('rate', ['rate-10', 'rate-15', 'rate-20', 'rate-25', 'rate-30', 'rate-35', 'rate-40', 'rate-45', 'rate-50']);
+            $table->longText('testimonial');
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('countries');
+        Schema::dropIfExists('testimonials');
     }
 };

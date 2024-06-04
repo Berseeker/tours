@@ -1,135 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
- <!-- Quick View Cart -->
- <div class="offcanvas offcanvas-end quick-view-cart" tabindex="-1" id="OcCart" aria-labelledby="OcViewCart">
-    <div class="offcanvas-header border-bottom">
-        <h4 class="offcanvas-title" id="OcViewCart">Shopping Cart</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <!-- Shopping Cart -->
-        <ul class="list-group list-group-flush tour-cart mb-4">
-            <li class="list-group-item pt-3 pb-3 ps-0 pe-0">
-                <!-- Tour -->
-                <div class="d-flex tour-item">
-                    <div class="flex-shrink-0 tour-image position-relative">
-                        <a href="single-tour.html" target="_blank" class="overflow-hidden d-block rounded-3">
-                            <figure><img loading="lazy" src="{{ asset('img/tours/t14.jpg') }}" alt="..."></figure>
-                        </a>
-                        <a href="javascript:;" class="tour-remove"><i class="ti ti-x"></i></a>
-                    </div>
-                    <div class="flex-grow-1 ms-3 tour-content">
-                        <h6 class="tour-title fs-6 fw-bold-1">
-                            <a href="single-tour.html" target="_blank">Louvre Museum Guided Tour with Skip the Line Entrance</a>
-                        </h6>
-                        <div class="fs-8 text-secondary">
-                            <div class="tour-price fs-8 text-secondary">
-                                <span class="new-price">
-                                    From: <strong class="text-dark fs-7"><sup>$</sup>95.85</strong>
-                                </span>
-                                <del class="old-price">
-                                    <span class="text-secondary"><sup>$</sup>105.85</span>
-                                </del>
-                            </div>
-                            <div class="tour-guest">
-                                <span>2 Adults, 1 Child, 1 Infant</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Tour -->
-            </li>
-            <li class="list-group-item pt-3 pb-3 ps-0 pe-0">
-                <!-- Tour -->
-                <div class="d-flex tour-item">
-                    <div class="flex-shrink-0 tour-image position-relative">
-                        <a href="single-tour.html" target="_blank" class="overflow-hidden d-block rounded-3">
-                            <figure><img loading="lazy" src="{{ asset('img/tours/t15.jpg') }}" alt="..."></figure>
-                        </a>
-                        <a href="javascript:;" class="tour-remove"><i class="ti ti-x"></i></a>
-                    </div>
-                    <div class="flex-grow-1 ms-3 tour-content">
-                        <h6 class="tour-title fs-6 fw-bold-1">
-                            <a href="single-tour.html" target="_blank">Grand Canal Gondola Ride with App Commentary</a>
-                        </h6>
-                        <div class="fs-8 text-secondary">
-                            <div class="tour-price">
-                                <span class="new-price">
-                                    From: <strong class="text-dark fs-7"><sup>$</sup>85.85</strong>
-                                </span>
-                                <del class="old-price">
-                                    <span class="text-secondary"><sup>$</sup>89.85</span>
-                                </del>
-                            </div>
-                            <div class="tour-guest">
-                                <span>2 Adults, 2 Childen</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Tour -->
-            </li>
-            <li class="list-group-item pt-3 pb-3 ps-0 pe-0">
-                <!-- Tour -->
-                <div class="d-flex tour-item">
-                    <div class="flex-shrink-0 tour-image position-relative">
-                        <a href="single-tour.html" target="_blank" class="overflow-hidden d-block rounded-3">
-                            <figure><img loading="lazy" src="{{ asset('img/tours/t16.jpg') }}" alt="..."></figure>
-                        </a>
-                        <a href="javascript:;" class="tour-remove"><i class="ti ti-x"></i></a>
-                    </div>
-                    <div class="flex-grow-1 ms-3 tour-content">
-                        <h6 class="tour-title fs-6 fw-bold-1">
-                            <a href="single-tour.html" target="_blank">Full-Day Windsor, Stonehenge, and Oxford Tour</a>
-                        </h6>
-                        <div class="fs-8 text-secondary">
-                            <div class="tour-price fs-8 text-secondary">
-                                <span class="new-price">
-                                    From: <strong class="text-dark fs-7"><sup>$</sup>102.85</strong>
-                                </span>
-                                <del class="old-price">
-                                    <span class="text-secondary"><sup>$</sup>115.85</span>
-                                </del>
-                            </div>
-                            <div class="tour-guest">
-                                <span>2 Adults, 1 Child</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Tour -->
-            </li>
-        </ul>
-        <!-- /Checkout -->
-        <div class="mb-4 text-end">
-            <div class="mb-4">
-                <h5 class="mb-1">
-                    <span class="fw-bold-1 text-body">Total (3 items):</span>
-                    <span class="h3 text-dark fw-bold-3"><sup>$</sup><span>285.85</span></span>
-                </h5>
-                <p class="text-secondary small pb-3">All taxes and fees included</p>
-                <div class="row g-3">
-                    <div class="col-6">
-                        <a href="cart.html" class="btn btn-lg btn-outline-primary w-100">
-                            <i class="ti ti-shopping-bag"></i>
-                            <span>View Cart</span>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="checkout.html" class="btn btn-lg btn-primary w-100">
-                            <i class="ti ti-credit-card"></i>
-                            <span>Checkout</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Checkout -->
-    </div>
-</div>
-<!-- /Quick View Cart -->
-<!-- /Modal Register -->
 <!-- HERO -->
 <section id="hero" class="hero hero-fullscreen section-mb-80">
     <div class="hero-wrapper">
@@ -152,175 +23,7 @@
             <!-- /Caption -->
         </div>
         <!-- /Hero video -->
-        <!-- Check tour -->
-        <div class="check-tour">
-            <div class="container">
-                <ul class="nav nav-tabs" id="myTab" role="tablist" style="border-bottom: 0px;margin-left:10px;">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Aventuras</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Traslados</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <form class="check-tour-form" action="tour-list.html">
-                            <div class="row g-2">
-                                <div class="col-lg-10">
-                                    <div class="row g-2">
-                                        <div class="col-12 col-lg-4 col-md-12">
-                                            <!-- Where -->
-                                            <div class="input-group input-group-lg where-input">
-                                                <label class="input-group-text bg-transparent border-0" for="txtWhere"><i class="ti ti-map-pin"></i></label>
-                                                <!--input type="text" class="form-control bg-transparent border-0 ps-0" placeholder="Where are you going?" id="txtWhere"-->
-                                                <select class="form-select bg-transparent form-control  border-0 ps-0" id="dselect-example">
-                                                    <option value="chrome">Cancun</option>
-                                                    <option value="firefox">Rivera Maya</option>
-                                                    <option value="safari">Tulum</option>
-                                                </select>
-                                            </div>
-                                            <!-- /Where -->
-                                        </div>
-                                        <div class="col-12 col-lg-4 col-md-6">
-                                            <!-- When -->
-                                            <div class="input-group input-group-lg when-input select-date">
-                                                <label class="input-group-text bg-transparent border-0" for="txtWhen"><i class="ti ti-calendar-event"></i></label>
-                                                <input type="text" class="form-control bg-transparent border-0 ps-0 " placeholder="{{ __('search.arrival') }}" id="txtWhen" data-input>
-                                            </div>
-                                            <!-- /When -->
-                                        </div>
-                                        <div class="col-12 col-lg-4 col-md-6">
-                                            <!-- Adventures -->
-                                            <div class="input-group input-group-lg adv-input">
-                                                <label class="input-group-text bg-transparent border-0" for="btnAdv"><i class="ti ti-users"></i></label>
-                                                <div class="dropdown flex-grow-1" data-dropdown-checkbox="">
-                                                    <button class="btn btn-light dropdown-toggle btn-lg bg-transparent border-0 ps-0 w-100 text-start" id="btnAdv" data-bs-auto-close="outside" type="button" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="{{ __('search.adventures') }}" id="chkAll" data-checkbox-type="all">
-                                                            <label class="form-check-label" for="chkAll">
-                                                                <strong>{{ __('search.adventures') }}</strong>
-                                                                <span>{{ __('search.adventures.text') }}</span>
-                                                            </label>
-                                                        </li>
-                                                        <li class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="{{ __('search.adventures.label') }}" id="chkGroup" data-checkbox-type="one">
-                                                            <label class="form-check-label" for="chkGroup">
-                                                                <strong>{{ __('search.adventures.group') }}</strong>
-                                                                <span>{{ __('search.adventures.group.text') }}</span>
-                                                            </label>
-                                                        </li>
-                                                        <li class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="{{ __('search.adventures.private.label') }}" id="chkPrivate" data-checkbox-type="one">
-                                                            <label class="form-check-label" for="chkPrivate">
-                                                                <strong>{{ __('search.adventures.private') }}</strong>
-                                                                <span>{{ __('search.adventures.private.text') }}</span>
-                                                            </label>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <!-- /Adventures -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2">
-                                    <!-- Button -->
-                                    <div class="check-button">
-                                        <button type="submit" class="btn btn-lg btn-primary w-100">
-                                            <i class="ficon ficon-check-valid-state"></i>
-                                            <span>{{ __('search.find.tours') }}</span>
-                                        </button>
-                                    </div>
-                                    <!-- /Button -->
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                        <form class="check-tour-form" action="tour-list.html">
-                            <div class="row g-2">
-                                <div class="col-lg-12">
-                                    <div class="row g-2">
-                                        <div class="col-12 col-lg-12 col-md-12">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="roundTrip" onclick="onToggle()">
-                                                <label class="form-check-label" for="roundTrip" id="labelRoundTrip">{{ __('search.roundTrip') }}</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-3 col-md-12">
-                                            <!-- Where -->
-                                            <div class="input-group input-group-lg where-input">
-                                                <label class="input-group-text bg-transparent border-0" for="txtWhere"><i class="ti ti-map-pin"></i></label>
-                                                <!--input type="text" class="form-control bg-transparent border-0 ps-0" placeholder="Where are you going?" id="txtWhere"-->
-                                                <select class="form-select bg-transparent form-control  border-0 ps-0" id="dselect-example">
-                                                    <option value="origen">{{ __('search.origin') }}</option>
-                                                    <option value="chrome">Cancun</option>
-                                                    <option value="firefox">Rivera Maya</option>
-                                                    <option value="safari">Tulum</option>
-                                                </select>
-                                            </div>
-                                            <!-- /Where -->
-                                        </div>
-                                        <div class="col-12 col-lg-3 col-md-6">
-                                            <!-- When -->
-                                            <div class="input-group input-group-lg when-input select-date">
-                                                <label class="input-group-text bg-transparent border-0" for="tripArrival"><i class="ti ti-calendar-event"></i></label>
-                                                <input type="text" class="form-control bg-transparent border-0 ps-0 " placeholder="{{ __('search.arrival') }}" id="tripArrival" data-input>
-                                            </div>
-                                            <!-- /When -->
-                                        </div>
-                                        <div class="col-12 col-lg-3 col-md-6" id="dynamicTrip">
-                                            <!-- When -->
-                                            <div class="input-group input-group-lg when-input select-date">
-                                                <label class="input-group-text bg-transparent border-0" for="tripDepature"><i class="ti ti-calendar-event"></i></label>
-                                                <input type="text" class="form-control bg-transparent border-0 ps-0 " placeholder="{{ __('search.departure') }}" id="tripDepature" data-input>
-                                            </div>
-                                            <!-- /When -->
-                                        </div>
-                                        <div class="col-12 col-lg-3 col-md-6">
-                                             <!-- Where -->
-                                             <div class="input-group input-group-lg where-input">
-                                                <label class="input-group-text bg-transparent border-0" for="txtWhere"><i class="ti ti-map-pin"></i></label>
-                                                <!--input type="text" class="form-control bg-transparent border-0 ps-0" placeholder="Where are you going?" id="txtWhere"-->
-                                                <select class="form-select bg-transparent form-control  border-0 ps-0" id="dselect-example">
-                                                    <option value="origen">{{ __('search.destination') }}</option>
-                                                    <option value="chrome">Cancun</option>
-                                                    <option value="firefox">Rivera Maya</option>
-                                                    <option value="safari">Tulum</option>
-                                                </select>
-                                            </div>
-                                            <!-- /Where -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2">
-                                     <!-- Where -->
-                                     <div class="input-group input-group-lg where-input">
-                                        <label class="input-group-text bg-transparent border-0" for="txtWhere"><i class="ti ti-users"></i></label>
-                                        <input type="text" class="form-control bg-transparent border-0 ps-0" placeholder="# de paxs" id="txtWhere">
-                                    </div>
-                                    <!-- /Where -->
-                                </div>
-                                <div class="col-lg-2">
-                                    <!-- Button -->
-                                    <div class="check-button">
-                                        <button type="submit" class="btn btn-lg btn-primary w-100">
-                                            <i class="ficon ficon-check-valid-state"></i>
-                                            <span>{{ __('search.find.tours') }}</span>
-                                        </button>
-                                    </div>
-                                    <!-- /Button -->
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <!-- /Check tour -->
+        @include('_partials.search')
     </div>
 </section>
 <!-- /HERO -->
@@ -919,8 +622,8 @@
     <div class="container">
         <!-- Heading -->
         <div class="heading">
-            <h2 class="title">Top Europe Tours</h2>
-            <p>Attractive tours are chosen by many tourists</p>
+            <h2 class="title">@lang('home.top.tour.title')</h2>
+            <p>@lang('home.top.tour.p')</p>
         </div>
         <!-- /Heading -->
         <!-- Tour list -->
@@ -928,305 +631,62 @@
             <div class="swiper tour-swiper">
                 <!-- Tour list -->
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <!-- Tour item -->
-                        <div class="card tour-item border-0">
-                            <div class="card-body p-0">
-                                <div class="tour-image">
-                                    <a href="single-tour.html" class="d-block">
-                                        <figure class="rounded-3 overflow-hidden position-relative">
-                                            <img loading="lazy" src="{{ asset('img/tours/t22.jpg') }}" class="img-fluid" alt="">
-                                            <figcaption>Museums & Exhibitions</figcaption>
-                                        </figure>
-                                    </a>
-                                    <span class="tour-sticker">Popular</span>
-                                    <a href="javascript:;" class="tour-like"><i class="ti ti-heart"></i></a>
-                                </div>
-                                <div class="tour-content p-3">
-                                    <div class="tour-duration-location">
-                                        <span>1 day</span> -
-                                        <a href="city.html">Paris</a>
-                                    </div>
-                                    <h3 class="tour-title">
-                                        <a href="single-tour.html">Louvre Museum Guided Tour with Skip the Line Entrance</a>
-                                    </h3>
-                                    <div class="tour-review">
-                                        <div class="tour-star-rate">
-                                            <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                        </div>
-                                        <span class="tour-review-number"><span>(4,635 reviews)</span></span>
-                                    </div>
-                                    <div class="tour-price">
-                                        <div class="new-price text-danger">
-                                            <span>From:</span>
-                                            <strong><sup>$</sup>85.80</strong>
-                                        </div>
-                                        <div class="old-price">
-                                            <del class="ms-2 text-muted"><sup>$</sup>99.80</del>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Tour item -->
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Tour item -->
-                        <div class="card tour-item border-0">
-                            <div class="card-body p-0">
-                                <div class="tour-image">
-                                    <a href="single-tour.html" class="d-block">
-                                        <figure class="rounded-3 overflow-hidden position-relative">
-                                            <img loading="lazy" src="{{ asset('img/tours/t23.jpg') }}" class="img-fluid" alt="">
-                                            <figcaption>Explorer &amp; Adventure</figcaption>
-                                        </figure>
-                                    </a>
-                                    <span class="tour-sticker bg-danger">Promotion</span>
-                                    <a href="javascript:;" class="tour-like"><i class="ti ti-heart"></i></a>
-                                </div>
-                                <div class="tour-content p-3">
-                                    <div class="tour-duration-location">
-                                        <span>1 day</span> -
-                                        <a href="city.html">Venice</a>
-                                    </div>
-                                    <h3 class="tour-title">
-                                        <a href="single-tour.html">Grand Canal Gondola Ride with App Commentary</a>
-                                    </h3>
-                                    <div class="tour-review">
-                                        <div class="tour-star-rate">
-                                            <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                        </div>
-                                        <span class="tour-review-number"><span>(1,335 reviews)</span></span>
-                                    </div>
-                                    <div class="tour-price">
-                                        <div class="new-price text-danger">
-                                            <span>From:</span>
-                                            <strong><sup>$</sup>95.80</strong>
-                                        </div>
-                                        <div class="old-price">
-                                            <del class="ms-2 text-muted"><sup>$</sup>110.80</del>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Tour item -->
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Tour item -->
-                        <div class="card tour-item border-0">
-                            <div class="card-body p-0">
-                                <div class="tour-image">
-                                    <a href="single-tour.html" class="d-block">
-                                        <figure class="rounded-3 overflow-hidden position-relative">
-                                            <img loading="lazy" src="{{ asset('img/tours/t24.jpg') }}" class="img-fluid" alt="">
-                                            <figcaption>Cultural & Foods</figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="tour-content p-3">
-                                    <div class="tour-duration-location">
-                                        <span>1 day</span> -
-                                        <a href="city.html">London</a>
-                                    </div>
-                                    <h3 class="tour-title">
-                                        <a href="single-tour.html">
-                                            Full-Day Windsor, Stonehenge, and Oxford Tour
+                    @foreach ($tours as $tour)
+                        <div class="swiper-slide">
+                            <!-- Tour item -->
+                            <div class="card tour-item border-0">
+                                <div class="card-body p-0">
+                                    <div class="tour-image">
+                                        <a href="single-tour.html" class="d-block">
+                                            <figure class="rounded-3 overflow-hidden position-relative">
+                                                <img loading="lazy" src="{{ asset($tour->main_image) }}" class="img-fluid" alt="{{ ($lang == $config::LANG_ES) ? $tour->name_es : $tour->name_en }}">
+                                                <figcaption>{{  $tour->typeTour }}</figcaption>
+                                            </figure>
                                         </a>
-                                    </h3>
-                                    <div class="tour-review">
-                                        <div class="tour-star-rate">
-                                            <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                        </div>
-                                        <span class="tour-review-number"><span>(3,135 reviews)</span></span>
+                                        <span class="tour-sticker {{ $tour->colorType }}">{{ ($lang == $config::LANG_ES) ?  json_decode($tour->tag_es)[0] : json_decode($tour->tag_en)[0] }}</span>
+                                        <a href="javascript:;" class="tour-like"><i class="ti ti-heart"></i></a>
                                     </div>
-                                    <div class="tour-price">
-                                        <div class="new-price text-danger">
-                                            <span>From:</span>
-                                            <strong><sup>$</sup>65.80</strong>
+                                    <div class="tour-content p-3">
+                                        <div class="tour-duration-location">
+                                            <span>{{  ($lang == $config::LANG_ES) ? $tour->days_range_es : $tour->days_range_en }}</span> -
+                                            <a href="city.html">{{  $tour->location->name . ' '. Config::get('app.currency') }}</a>
                                         </div>
-                                        <div class="old-price">
-                                            <del class="ms-2 text-muted"><sup>$</sup>79.80</del>
+                                        <h3 class="tour-title">
+                                            <a href="single-tour.html">{{  ($lang == $config::LANG_ES) ? $tour->name_es : $tour->name_en }}</a>
+                                        </h3>
+                                        <div class="tour-review">
+                                            <div class="tour-star-rate">
+                                                <span class="star-rate-view size-16"><span class="star-value {{ $tour->rate }}"></span></span>
+                                            </div>
+                                            @if ($tour->reviews > 0)
+                                                <span class="tour-review-number"><span>({{ number_format($tour->reviews) }} reviews)</span></span>
+                                            @else
+                                                <span class="tour-review-number"><span>({{ number_format($tour->fakeReviews) }} reviews)</span></span>
+                                            @endif
+                                            
                                         </div>
-                                    </div>
-                                </div>
-                                <a href="javascript:;" class="tour-like"><i class="ti ti-heart"></i></a>
-                            </div>
-                        </div>
-                        <!-- /Tour item -->
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Tour item -->
-                        <div class="card tour-item border-0">
-                            <div class="card-body p-0">
-                                <div class="tour-image">
-                                    <a href="single-tour.html" class="d-block">
-                                        <figure class="rounded-3 overflow-hidden position-relative">
-                                            <img loading="lazy" src="{{ asset('img/tours/t25.jpg') }}" class="img-fluid" alt="">
-                                            <figcaption>Explorer &amp; Adventure</figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="tour-content p-3">
-                                    <div class="tour-duration-location">
-                                        <span>1 day</span> -
-                                        <a href="city.html">Vatican</a>
-                                    </div>
-                                    <h3 class="tour-title">
-                                        <a href="single-tour.html">
-                                            Museums & Sistine Chapel Entrance Ticket
-                                        </a>
-                                    </h3>
-                                    <div class="tour-review">
-                                        <div class="tour-star-rate">
-                                            <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                        </div>
-                                        <span class="tour-review-number"><span>(2,621 reviews)</span></span>
-                                    </div>
-                                    <div class="tour-price">
-                                        <div class="new-price text-danger">
-                                            <span>From:</span>
-                                            <strong><sup>$</sup>55.80</strong>
-                                        </div>
-                                        <div class="old-price">
-                                            <del class="ms-2 text-muted"><sup>$</sup>69.80</del>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="tour-sticker">Popular</span>
-                                <a href="javascript:;" class="tour-like"><i class="ti ti-heart"></i></a>
-                            </div>
-                        </div>
-                        <!-- /Tour item -->
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Tour item -->
-                        <div class="card tour-item border-0">
-                            <div class="card-body p-0">
-                                <div class="tour-image">
-                                    <a href="single-tour.html" class="d-block">
-                                        <figure class="rounded-3 overflow-hidden position-relative">
-                                            <img loading="lazy" src="{{ asset('img/tours/t26.jpg') }}" class="img-fluid" alt="">
-                                            <figcaption>Hiking & Trekking</figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="tour-content p-3">
-                                    <div class="tour-duration-location">
-                                        <span>1 day</span> -
-                                        <a href="city.html">Nice</a>
-                                    </div>
-                                    <h3 class="tour-title">
-                                        <a href="single-tour.html">Old Town Treasures and Castle Hill Walking Tour</a>
-                                    </h3>
-                                    <div class="tour-review">
-                                        <div class="tour-star-rate">
-                                            <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                        </div>
-                                        <span class="tour-review-number"><span>(1,325 reviews)</span></span>
-                                    </div>
-                                    <div class="tour-price">
-                                        <div class="new-price text-danger">
-                                            <span>From:</span>
-                                            <strong><sup>$</sup>68.80</strong>
-                                        </div>
-                                        <div class="old-price">
-                                            <del class="ms-2 text-muted"><sup>$</sup>79.80</del>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="javascript:;" class="tour-like"><i class="ti ti-heart"></i></a>
-                            </div>
-                        </div>
-                        <!-- /Tour item -->
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Tour item -->
-                        <div class="card tour-item border-0">
-                            <div class="card-body p-0">
-                                <div class="tour-image">
-                                    <a href="single-tour.html" class="d-block">
-                                        <figure class="rounded-3 overflow-hidden position-relative">
-                                            <img loading="lazy" src="{{ asset('img/tours/t27.jpg') }}" class="img-fluid" alt="">
-                                            <figcaption>Cultural & Foods</figcaption>
-                                        </figure>
-                                    </a>
-                                    <span class="tour-sticker bg-success">Bestseller</span>
-                                    <a href="javascript:;" class="tour-like"><i class="ti ti-heart"></i></a>
-                                </div>
-                                <div class="tour-content p-3">
-                                    <div class="tour-duration-location">
-                                        <span>1 day</span> -
-                                        <a href="city.html">Florence</a>
-                                    </div>
-                                    <h3 class="tour-title">
-                                        <a href="single-tour.html">
-                                            Dome Climb, Museum and Baptistry Small-Group Tour
-                                        </a>
-                                    </h3>
-                                    <div class="tour-review">
-                                        <div class="tour-star-rate">
-                                            <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                        </div>
-                                        <span class="tour-review-number"><span>(3,111 reviews)</span></span>
-                                    </div>
-                                    <div class="tour-price">
-                                        <div class="new-price text-danger">
-                                            <span>From:</span>
-                                            <strong><sup>$</sup>75.80</strong>
-                                        </div>
-                                        <div class="old-price">
-                                            <del class="ms-2 text-muted"><sup>$</sup>89.80</del>
+                                        <div class="tour-price">           
+                                            @if ($tour->priceDiscount > 0)
+                                                <div class="new-price text-danger">
+                                                    <span>@lang('home.top.tour.from')</span>
+                                                    <strong><sup>$</sup>{{ number_format($tour->priceDiscount * $config->currency(Config::get('app.currency'))) . ' ' .$config->currencyString(Config::get('app.currency')) }}</strong>
+                                                </div>
+                                                <div class="old-price">
+                                                    <del class="ms-2 text-muted"><sup>$</sup>{{ number_format($tour->price * $config->currency(Config::get('app.currency'))) . ' ' .$config->currencyString(Config::get('app.currency')) }}</del>
+                                                </div>
+                                            @else
+                                                <div class="new-price text-danger">
+                                                    <span>@lang('home.top.tour.from')</span>
+                                                    <strong><sup>$</sup>{{ number_format($tour->price * $config->currency(Config::get('app.currency'))) . ' ' .$config->currencyString(Config::get('app.currency')) }}</strong>
+                                                </div>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- /Tour item -->
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Tour item -->
-                        <div class="card tour-item border-0">
-                            <div class="card-body p-0">
-                                <div class="tour-image">
-                                    <a href="single-tour.html" class="d-block">
-                                        <figure class="rounded-3 overflow-hidden position-relative">
-                                            <img loading="lazy" src="{{ asset('img/tours/t28.jpg') }}" class="img-fluid" alt="">
-                                            <figcaption>Cultural & Foods</figcaption>
-                                        </figure>
-                                    </a>
-                                    <a href="javascript:;" class="tour-like"><i class="ti ti-heart"></i></a>
-                                </div>
-                                <div class="tour-content p-3">
-                                    <div class="tour-duration-location">
-                                        <span>1 day</span> -
-                                        <a href="city.html">Amsterdam</a>
-                                    </div>
-                                    <h3 class="tour-title">
-                                        <a href="single-tour.html">
-                                            Zaanse Schans, Edam, Volendam & Marken Bus Tour
-                                        </a>
-                                    </h3>
-                                    <div class="tour-review">
-                                        <div class="tour-star-rate">
-                                            <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                        </div>
-                                        <span class="tour-review-number"><span>(1,121 reviews)</span></span>
-                                    </div>
-                                    <div class="tour-price">
-                                        <div class="new-price text-danger">
-                                            <span>From:</span>
-                                            <strong><sup>$</sup>85.80</strong>
-                                        </div>
-                                        <div class="old-price">
-                                            <del class="ms-2 text-muted"><sup>$</sup>99.80</del>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Tour item -->
-                    </div>
+                            <!-- /Tour item -->
+                        </div>  
+                    @endforeach
                 </div>
                 <!-- /Post list -->
                 <!-- Dots -->
@@ -1249,11 +709,11 @@
                     <div class="col-12 col-xl-4">
                         <!-- Heading & Button -->
                         <div class="heading">
-                            <h2 class="title">What to say about us?</h2>
-                            <p>We give our customers exciting experiences after every trip and preserve great moments.</p>
+                            <h2 class="title">@lang('home.testimonial.title')</h2>
+                            <p>@lang('home.testimonial.p')</p>
                         </div>
                         <div class="mb-4 pb-3">
-                            <a href="#mdlReview" data-bs-toggle="modal" class="btn btn-lg btn-outline-primary">Read more <i class="ti ti-arrow-narrow-right"></i></a>
+                            <a href="#mdlReview" data-bs-toggle="modal" class="btn btn-lg btn-outline-primary">@lang('home.testimonial.button')<i class="ti ti-arrow-narrow-right"></i></a>
                         </div>
                         <!-- /Heading & Button -->
                     </div>
@@ -1261,94 +721,30 @@
                         <!-- Review list -->
                         <div class="swiper review-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <!-- Review item -->
-                                    <div class="card border-0">
-                                        <div class="card-body d-flex review-content">
-                                            <figure>
-                                                <img loading="lazy" src="{{ asset('img/avatars/a1.jpg') }}" alt="" class="rounded-circle">
-                                            </figure>
-                                            <div class="ps-3">
-                                                <blockquote>
-                                                    <em>"The boat ride provided great views of the two islands. The audio tours were excellent, and I highly recommend this experience."</em>
-                                                </blockquote>
-                                                <span class="d-block mb-2">
-                                                    <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                                </span>
-                                                <span class="blockquote-footer mt-0 mb-0">
-                                                    Abraham Deep (Paris, France)
-                                                </span>
+                                @foreach ($testimonials as $testimonial)
+                                    <div class="swiper-slide">
+                                        <!-- Review item -->
+                                        <div class="card border-0">
+                                            <div class="card-body d-flex review-content">
+                                                <figure>
+                                                    <img loading="lazy" src="{{ asset('img/avatars/a1.jpg') }}" alt="" class="rounded-circle">
+                                                </figure>
+                                                <div class="ps-3">
+                                                    <blockquote>
+                                                        <em>{{  $testimonial->testimonial }}</em>
+                                                    </blockquote>
+                                                    <span class="d-block mb-2">
+                                                        <span class="star-rate-view size-16"><span class="star-value {{ $testimonial->rate }}"></span></span>
+                                                    </span>
+                                                    <span class="blockquote-footer mt-0 mb-0">
+                                                        {{ $testimonial->name }} ({{  $testimonial->location }})
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
+                                        <!-- /Review item -->
                                     </div>
-                                    <!-- /Review item -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- Review item -->
-                                    <div class="card border-0">
-                                        <div class="card-body d-flex review-content">
-                                            <figure>
-                                                <img loading="lazy" src="{{ asset('img/avatars/a2.jpg') }}" alt="" class="rounded-circle">
-                                            </figure>
-                                            <div class="ps-3">
-                                                <blockquote>
-                                                    <em>We also enjoyed arriving at the tour office a little early and enjoying a delicious almond croissant at the cafe across the street. </em>
-                                                </blockquote>
-                                                <span class="d-block mb-2">
-                                                    <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                                </span>
-                                                <span class="blockquote-footer mt-0 mb-0">
-                                                    Jenifer Lee (New York, USA)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /Review item -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- Review item -->
-                                    <div class="card border-0">
-                                        <div class="card-body d-flex review-content">
-                                            <figure>
-                                                <img loading="lazy" src="{{ asset('img/avatars/a3.jpg') }}" alt="" class="rounded-circle">
-                                            </figure>
-                                            <div class="ps-3">
-                                                <blockquote>
-                                                    <em>You meet outside a souvenir shop where you are given your tickets. You go to the 2nd floor where you are given a lovely history lesson about Paris.</em>
-                                                </blockquote>
-                                                <span class="d-block mb-2">
-                                                    <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                                </span>
-                                                <span class="blockquote-footer mt-0 mb-0">
-                                                    Michael Owen (London, England)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /Review item -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- Review item -->
-                                    <div class="card border-0">
-                                        <div class="card-body d-flex review-content">
-                                            <figure>
-                                                <img loading="lazy" src="{{ asset('img/avatars/a4.jpg') }}" alt="" class="rounded-circle">
-                                            </figure>
-                                            <div class="ps-3">
-                                                <blockquote>
-                                                    <em>This tour was excellent, the guide was extremely knowledgeable and really brought the Roman Forum, Palatine Hill and Colosseum really come to life. </em>
-                                                </blockquote>
-                                                <span class="d-block mb-2">
-                                                    <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                                </span>
-                                                <span class="blockquote-footer mt-0 mb-0">
-                                                    Steve Mark (New York, USA)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /Review item -->
-                                </div>
+                                @endforeach
                             </div>
                             <!-- Navs & Dots -->
                             <div class="swiper-pagination review-dot"></div>
@@ -1394,204 +790,30 @@
                                 </div>
                                 <!-- Review item -->
                             </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a2.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>Skipping the line was great. We also enjoyed arriving at the tour office a little early and enjoying a delicious almond croissant at the cafe across the street. </em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Jenifer Lee (New York, USA)
-                                            </span>
+                            @foreach ($testimonials as $testimonial)
+                                <div class="col-12">
+                                    <!-- Review item -->
+                                    <div class="card">
+                                        <div class="card-body d-flex review-content">
+                                            <figure>
+                                                <img loading="lazy" src="{{ asset('img/avatars/a2.jpg') }}" alt="" class="rounded-circle">
+                                            </figure>
+                                            <div class="ps-3">
+                                                <blockquote>
+                                                    <em>{{ $testimonial->testimonial }}</em>
+                                                </blockquote>
+                                                <span class="d-block mb-2">
+                                                    <span class="star-rate-view size-16"><span class="star-value {{ $testimonial->rate }}"></span></span>
+                                                </span>
+                                                <span class="blockquote-footer mt-0 mb-0">
+                                                    {{ $testimonial->name }} ({{ $testimonial->location }})
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a3.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>You meet outside a souvenir shop where you are given your tickets. You go through security and go to the 2nd floor where you are given a lovely history lesson about Paris.</em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Michael Owen (London, England)
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a4.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>This tour was excellent, out Engliah speaking guide was extremely knowledgeable and really brought the Roman forum, Palatine Hill and Colosseum really come to life. </em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Steve Mark (New York, USA)
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a4.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>This tour was excellent, out Engliah speaking guide was extremely knowledgeable and really brought the Roman forum, Palatine Hill and Colosseum really come to life. </em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Steve Mark (New York, USA)
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a3.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>You meet outside a souvenir shop where you are given your tickets. You go through security and go to the 2nd floor where you are given a lovely history lesson about Paris.</em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Michael Owen (London, England)
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a2.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>Skipping the line was great. We also enjoyed arriving at the tour office a little early and enjoying a delicious almond croissant at the cafe across the street. </em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Jenifer Lee (New York, USA)
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a3.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>You meet outside a souvenir shop where you are given your tickets. You go through security and go to the 2nd floor where you are given a lovely history lesson about Paris.</em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Michael Owen (London, England)
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a4.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>This tour was excellent, out Engliah speaking guide was extremely knowledgeable and really brought the Roman forum, Palatine Hill and Colosseum really come to life. </em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Steve Mark (New York, USA)
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
-                            <div class="col-12">
-                                <!-- Review item -->
-                                <div class="card">
-                                    <div class="card-body d-flex review-content">
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/avatars/a4.jpg') }}" alt="" class="rounded-circle">
-                                        </figure>
-                                        <div class="ps-3">
-                                            <blockquote>
-                                                <em>This tour was excellent, out Engliah speaking guide was extremely knowledgeable and really brought the Roman forum, Palatine Hill and Colosseum really come to life. </em>
-                                            </blockquote>
-                                            <span class="d-block mb-2">
-                                                <span class="star-rate-view size-16"><span class="star-value rate-45"></span></span>
-                                            </span>
-                                            <span class="blockquote-footer mt-0 mb-0">
-                                                Steve Mark (New York, USA)
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Review item -->
-                            </div>
+                                    <!-- Review item -->
+                                </div>  
+                            @endforeach
                         </div>
                     </div>
                     <!-- /Review -->
@@ -1607,8 +829,8 @@
     <div class="container">
         <!-- Heading -->
         <div class="heading">
-            <h2 class="title">Useful information</h2>
-            <p>Things to know when traveling to Europe</p>
+            <h2 class="title">@lang('home.information.title')</h2>
+            <p>@lang('home.information.p')</p>
         </div>
         <!-- /Heading -->
         <!-- Blog mini -->
@@ -1788,14 +1010,6 @@
             </div>
         </div>
         <!-- /Blog mini -->
-        <!-- Button -->
-        <div class="mt-2">
-            <a href="#" class="fw-bold-1">
-                <i class="ti ti-reload"></i>
-                <span>Load more</span>
-            </a>
-        </div>
-        <!-- /Button -->
     </div>
 </section>
 <!-- /INFO-->
@@ -1814,15 +1028,15 @@
                         <!-- Content -->
                         <div class="signup-content p-4 m-0 m-xl-3">
                             <div class="heading">
-                                <h2 class="title">Sign up for our newsletter</h2>
-                                <p>Sign up now for travel tips, personalized itineraries, and vacation inspiration straight to your inbox.</p>
+                                <h2 class="title">@lang('home.newsletter.title')</h2>
+                                <p>@lang('home.newsletter.p')</p>
                             </div>
                             <div class="input-group input-group-lg mb-4">
                                 <input type="text" class="form-control" placeholder="Ex: yourname@example.com" aria-label="Your Email">
-                                <button class="btn btn-primary" type="button">Sign up</button>
+                                <button class="btn btn-primary" type="button">@lang('home.newsletter.sign')</button>
                             </div>
                             <p class="signup-note">
-                                Note: <em>By signing up, you agree to receive promotional emails and insider tips. You can unsubscribe your consent at any time with future effect.</em>
+                                Note: <em>@lang('home.newsletter.note')</em>
                             </p>
                         </div>
                         <!-- /Content -->
@@ -1833,123 +1047,6 @@
     </div>
 </section>
 <!-- /SIGNUP -->
-<!-- APPS -->
-<section id="app" class="section-mb-80">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-xl-9">
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <div class="app-info">
-                            <!-- Heading -->
-                            <div class="heading">
-                                <h2 class="title">Your Travel Companion</h2>
-                                <p>Book tours easily with quick support and track your tour booking through account management. The App accompany you every step of the way.</p>
-                            </div>
-                            <!-- /Heading -->
-                            <!-- Get app -->
-                            <div class="row">
-                                <div class="col-12 col-md-8">
-                                    <div class="app-link mb-4 pb-3">
-                                        <h4 class="app-title">Send a link</h4>
-                                        <p class="text-secondary fs-7">Enter your mobile number to get the app link</p>
-                                        <div class="input-group input-group-lg">
-                                            <input type="text" class="form-control" placeholder="Ex: +1 321 7654321" aria-label="Your Phone Number">
-                                            <button class="btn btn-primary" type="button">Send</button>
-                                        </div>
-                                    </div>
-                                    <div class="app-download mb-4 pb-0 pb-md-3">
-                                        <h4 class="app-title">Get moblie app</h4>
-                                        <p class="text-secondary fs-7">Download the app on the AppStore and Google Play</p>
-                                        <div class="row g-2">
-                                            <div class="col-6">
-                                                <a href="#">
-                                                    <figure>
-                                                        <img loading="lazy" src="{{ asset('img/icons/s4.svg') }}" class="img-fluid" alt="">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                            <div class="col-6">
-                                                <a href="#">
-                                                    <figure>
-                                                        <img loading="lazy" src="{{ asset('img/icons/s5.svg') }}" class="img-fluid" alt="">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <div class="app-qrcode mb-4 pb-3">
-                                        <h4 class="app-title">Scan QR code</h4>
-                                        <p class="text-secondary fs-7">Scan the QRcode below to get the app link</p>
-                                        <figure>
-                                            <img loading="lazy" src="{{ asset('img/icons/s6.png') }}" class="img-fluid border" alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Get app -->
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <!-- Image -->
-                        <div class="app-phone-image text-end text-xl-center d-none d-md-block">
-                            <figure>
-                                <img loading="lazy" src="{{ asset('img/about/a3.png') }}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                        <!-- /Image -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /APPS -->
-<!-- TAGS -->
-<section id="tag" class="section-mb-80">
-    <div class="container">
-        <!-- Heading -->
-        <div class="heading">
-            <h2 class="title">Many people are interested</h2>
-            <p>The most popular destinations in Europe</p>
-        </div>
-        <!-- /Heading -->
-        <!-- Tag list -->
-        <ul class="tag-list list-inline">
-            <li class="list-inline-item"><a href="#">Vatican Museums</a></li>
-            <li class="list-inline-item"><a href="#">Colosseum</a></li>
-            <li class="list-inline-item"><a href="#">Seine River</a></li>
-            <li class="list-inline-item"><a href="#">Sagrada Familia</a></li>
-            <li class="list-inline-item"><a href="#">Prague Castle</a></li>
-            <li class="list-inline-item"><a href="#">Van Gogh Museum</a></li>
-            <li class="list-inline-item"><a href="#">Tower of London</a></li>
-            <li class="list-inline-item"><a href="#">The London Eye</a></li>
-            <li class="list-inline-item"><a href="#">Pompeii</a></li>
-            <li class="list-inline-item"><a href="#">Leonardo Museum</a></li>
-            <li class="list-inline-item"><a href="#">Rembrandtplein</a></li>
-            <li class="list-inline-item"><a href="#">Alhambra, Granada</a></li>
-            <li class="list-inline-item"><a href="#">Louvre Museum</a></li>
-            <li class="list-inline-item"><a href="#">Caminito del Rey</a></li>
-            <li class="list-inline-item"><a href="#">Sainte-Chapelle</a></li>
-            <li class="list-inline-item"><a href="#">Last Supper</a></li>
-            <li class="list-inline-item"><a href="#">Keukenhof</a></li>
-            <li class="list-inline-item"><a href="#">Pantheon, Rome</a></li>
-            <li class="list-inline-item"><a href="#">9/11 Memorial, NYC</a></li>
-            <li class="list-inline-item"><a href="#">Alcázar of Seville</a></li>
-            <li class="list-inline-item"><a href="#">Paris</a></li>
-            <li class="list-inline-item"><a href="#">London</a></li>
-            <li class="list-inline-item"><a href="#">Amsterdam</a></li>
-            <li class="list-inline-item"><a href="#">Barcelona</a></li>
-            <li class="list-inline-item"><a href="#">Venice</a></li>
-            <li class="list-inline-item"><a href="#">Rome</a></li>
-            <li class="list-inline-item"><a href="#">Berlin</a></li>
-        </ul>
-        <!-- /Tag list -->
-    </div>
-</section>
-<!-- /TAGS -->
 <script style="text/javascript">
 
     //set initial state.

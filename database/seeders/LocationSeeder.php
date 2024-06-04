@@ -23,5 +23,15 @@ class LocationSeeder extends Seeder
             'name' => Str::of('Cancun')->ucfirst(),
             'country_id' => 1
         ]);
+
+        DB::table('locations')->insert([
+            'name' => Str::of('Valladolid')->ucfirst(),
+            'country_id' => 1
+        ]);
+
+        DB::table('locations')->insert([
+            'name' => Str::of('Isla Mujeres')->ucfirst(),
+            'country_id' => 1
+        ]);
     }
 }

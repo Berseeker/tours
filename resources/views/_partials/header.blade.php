@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="logo-nav-container">
                     <!-- Logo -->
-                    <a id="logo" href="{{ route('home', ['locale' => App::getLocale()]) }}" class="logo">
+                    <a id="logo" href="{{ route('inicio', ['locale' => App::getLocale()]) }}" class="logo">
                         <img loading="lazy" src="{{ asset('img/logo.png') }}" class="logo-dark" alt="">
                         <img loading="lazy" src="{{ asset('img/logo-light.png') }}" class="logo-light" alt="">
                         <h1 class="d-none">Tourago</h1>
@@ -129,14 +129,15 @@
                                 <div class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
                                         <span class="currency">
-                                            <span>USD</span>
+                                            <span>{{ $config->currencyString(Config::get('app.currency')) }}</span>
                                         </span>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">EUR</a></li>
-                                        <li><a class="dropdown-item" href="#">GBP</a></li>
-                                        <li><a class="dropdown-item" href="#">JPY</a></li>
-                                        <li><a class="dropdown-item" href="#">CNY</a></li>
+                                        @foreach ($countries as $country)
+                                            @if ($country->lang != Config::get('app.currency'))
+                                                <li><a class="dropdown-item" href="{{ route(Route::currentRouteName(), ['locale' => App::getLocale(), 'currency' => $country->lang]) }}">{{ $country->currency }}</a></li>
+                                            @endif
+                                        @endforeach
                                     </ul>
                                 </div>
                                 <!-- /Currency -->
